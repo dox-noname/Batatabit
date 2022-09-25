@@ -1,0 +1,28 @@
+
+
+.wrap{
+display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+   height: 400px;
+    margin: 0 auto;
+    width: 100%;
+ 
+    
+}
+
+
+.plans-container-slider{
+    justify-content: center;
+    overflow-x: hidden;
+
+}
+.icon-right{
+    display: none;
+}
+
+.main-coins-container{
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}

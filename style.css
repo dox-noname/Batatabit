@@ -1,0 +1,550 @@
+:root{
+    --inter: 'Inter', sans-serif;
+    --DMsans: 'DM Sans', sans-serif;
+
+    /*colors*/
+    --bitcoin-Orange: #F7931A;
+    --soft-Orange : #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --sof-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --warm-black1:#282623;
+    --grey: #BABABA;
+    --Ofwhite:#FAF8F7;
+    --JustWhite:#FFFFFF;
+
+    
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box ;
+}
+html{
+      font-size: 62.5%;
+}
+body{
+    /*para poder hacer uso de rem*/
+  
+    font-family: var(--DMsans);
+}
+
+header{
+    position: relative;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+    height:334px ;
+}
+header img{
+    width: 150px;
+    height: 24px;
+    align-self: center ;
+}
+.header-title-container{
+    color: white;
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    align-self: center;
+    
+}
+.header-title-container h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.header-title-container p{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 800;
+    font-family: var(--inter);
+    color: var(--soft-Orange);
+
+}
+.header-button {
+    display: block;
+    position:absolute;
+    top: 300px;
+    left: calc(50% -  118px);
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: var(--inter);
+    text-decoration: none;
+    color: var(--warm-black);
+    padding: 15px;
+    background-color: var(--Ofwhite);
+    width: 230px;
+    height: 49px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+
+}
+.header-button span{
+    background-image: url('./icons/down-arrow.svg');
+    margin-left: 10px ;
+    width: 13px;
+    height: 8px;
+    display: inline-block;
+
+}
+main{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--Ofwhite);
+}
+/*section 1*/
+
+.main-exchange-container{
+    width: 100%;
+    min-height: 320px;
+    padding-top: 60px;
+}
+.background-img{
+    background-image: url('./images/Bitcoin.svg');
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 40px
+
+}
+.main-exchange-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-exchange-container--title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.main-exchange-container--title h2{
+    font-size: 2.4rem;
+  
+}
+
+.main-exchange-container--title p {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: #757577;
+    font-weight: 500;
+    margin-bottom: 50px;
+    
+}
+.title-coins{
+    width: 180px;
+    margin: 0 auto;
+    text-align: start;
+    font-size: 2rem;
+    color: var(--bitcoin-Orange);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.main-coins-container{
+    position: relative;
+    display: flex;
+    padding-left: 50px; 
+    width: 100%;
+    min-width: 320px;
+    max-width: 900px;
+    overflow-x: scroll;
+    overscroll-behavior-x:  contain;
+    scroll-snap-type: x proximity;
+    gap: 70px;
+
+}
+
+.grid-r{
+    padding-right: 50px;
+}
+.icon-right{
+    background-image: url('./icons/right.svg');
+    width: 15px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 280px;
+    top: 150px;
+}
+
+.main-grid-coins{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+    margin-bottom: 120px;
+
+}
+
+
+.main-grid-coins div{
+
+    font-weight: 500;
+    width: 100px;
+    height: 50px;
+    padding: 20px 0px;
+    font-size: 1.5rem;
+    color: #B5B0AC;
+    background-color: white;
+   
+   
+}
+.vector{
+    margin-left: 10px;
+    display: inline-block;
+    background-image: url('./icons/trending-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: 13px;
+    height: 10px;
+}
+.trending-down{
+    margin-left: 10px  ;
+    display: inline-block;
+    background-image: url('./icons/trending-up.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: 13px;
+    height: 6px;
+}
+.coins p{
+    padding: 0px 10px;
+
+    color:#B5B0AC;
+    
+}
+.cash p{
+    text-align: center;
+    
+    color: #757575;
+}
+.one{
+    border-top-left-radius: 5px;
+}
+.two{
+  border-bottom-left-radius: 5px;
+}
+.tree{
+    border-top-right-radius: 5px ;
+}
+.four{
+    border-bottom-right-radius: 5px ;
+}
+.main-coins-actual{
+    padding: 12px;
+    background-color: var(--soft-Orange);
+    border-radius: 10px;
+    min-width: 200px;
+    max-width: 900px;
+    width: 193px;
+    margin-left: 12px;
+    color: #282623;
+    font-size: 1.3rem;
+    font-weight: 500;
+  
+}
+.main-coins-actual b{
+    color: black;
+    font-weight: bold;
+  font-family: var(--inter);
+
+}
+.comiciones{
+ 
+    color: var(--secondary-blue);
+}
+.grid
+#container-coin-actual{
+    margin:  0 auto;
+
+    background-color: var(--Ofwhite);
+}
+.--comiciones{
+    padding: 12px;
+    background-color: var(--sof-blue);
+}
+.batata{
+    position: absolute;
+    left: calc(50% - 20px);
+    top: -10px;
+    background-image: url('./icons/batata.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 25px;
+
+}
+/*section 2*/
+.main-product-detail{
+    color: #808080;
+}
+.product-detail-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+ 
+    min-width: 320px;
+    margin-top: 70px;
+    background-color: var(--warm-black);
+    color: #808080;
+
+ 
+}
+
+.container-txt  h2{
+
+    padding-top: 50px;
+    font-size: 2.1rem;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+   
+}
+.container-txt p{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    
+}
+.wrap{
+    height:700px;
+    max-width: 930px;
+}
+.card-container{
+    
+
+    width: 90%;
+    max-width: 400px;
+    min-width: 230px;
+    min-height: 152px;
+    border-radius: 5px;
+    text-align: start;
+    padding: 20px 10px;
+    height: 152px;
+
+    background-color: var(--warm-black1);
+    margin: 10px auto;
+}
+.card-container h3{
+    font-size: 2rem;
+    color: white;
+    margin-top: 10px;
+
+}
+.card-container p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.reloj{
+    background-image: url('./icons/clock.svg');
+    width:22px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.eyes{
+    background-image: url('./icons/eyev.svg');
+    width:22px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.dolar{
+    background-image: url('./icons/dollar-sign.svg');
+    width:22px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.paloma{
+    background-image: url('./icons/check-circle.svg');
+    width:22px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*section3*/
+.Bitcoin-img-background{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./images/bitcoinbaby2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:white;
+    padding-top: 20px;
+        
+
+}
+.Bitcoin-img-background h2{
+    font-size: 3rem;
+
+
+}
+.main-planes-container{
+    background-color: var(--Ofwhite);
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+}
+
+/*section d4*/
+.plans-container-slider{
+display: flex;
+height: 316px;
+overflow-x: scroll;
+overscroll-behavior-x:  contain;
+scroll-snap-type: x proximity;
+gap: 30px;
+}
+.container-txt-planes {
+        margin-bottom: 30px;
+    text-align: center;
+
+}
+.container-txt-planes h2{
+    font-size: 2.4rem;
+    margin-top: 60px;
+    font-weight: 900;
+}
+.container-txt-planes p{
+    margin-top: 15px;
+    font-size: 1.6rem;
+    color: #757575  ;
+}
+/*card*/
+#float {
+    background-color: var(--bitcoin-Orange);
+    width: 120px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    position:  absolute;
+    top: -15px;
+    left: calc(50% - 60px);
+}
+
+
+.card{
+    border-radius: 10px;
+scroll-snap-align: center;
+  margin-top: 50px;
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    text-align: center;
+    padding-top: 40px;
+}
+.card h3{
+    font-size: 1.4rem;
+}
+.card h2{
+    font-size: 5rem;
+    font-weight: 900;
+   
+}
+.dollar{
+    font-size: 1.4rem;
+    color: #363636;
+   
+}
+.card p{
+    color: #757575;
+    font-size: 1.3rem;
+    padding: 10px;
+    font-weight: 500;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px;
+    max-width: 300px;
+    min-width: 150px;
+    width: 151px;
+    border: 2px solid var(--bitcoin-Orange); 
+    border-radius: 5px;
+    font-weight: 700;
+
+}
+.orange-right{
+    display: inline-block;
+    background-image: url('./icons/orange-right-arrow.svg');
+    width: 25px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
+/*footer*/
+
+footer{
+    background-color: var(--bitcoin-Orange);
+    width: 100%;
+    min-width: 320px;
+  
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul li{
+
+    list-style: none;
+}
+
+.footer-logo{
+    width: 80px;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+/* .main-exchange-container--title h2 {
+    font-size: 1.6rem;
+    padding: 0px 8px ;
+    margin-bottom: 20px;
+}
+.main-exchange-container--title p{
+    font-size: 1rem;
+    color: #757575;
+    font-weight: 900;
+    padding: 0px 4px;
+} */
